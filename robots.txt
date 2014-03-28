@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /assets
+Allow: /posts
+Sitemap: http://simaq.github.io/sitemap.txt
+Sitemap: http://simaq.github.io/atom.xml
