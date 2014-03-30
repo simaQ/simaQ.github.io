@@ -1,0 +1,118 @@
+/*the stylesheet of 2014-03-30 implementation of arrows with css */
+
+#demo1 {
+	border: 10px solid black;
+	width: 10px;
+	height: 10px;
+	border-left-color: red; 
+}
+
+#demo2 {
+	border: 10px solid #fff;
+	border-left-color: red;
+	width: 0;
+	height: 0;
+}
+
+#demo3 {
+	border: 10px solid transparent;
+	border-left: 20px solid #000;
+	width: 0;
+	height: 0;
+}
+
+#demo4, #demo5 {
+	position: relative;			
+}
+
+#demo4:after {
+	border: 10px solid transparent;
+	border-left-color: red;
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: "";
+}
+
+#demo5:after, #demo5:before {
+	border: 10px solid transparent;
+	border-left: 10px solid #fff;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	right: -20px;
+	content: ' '
+}
+
+#demo5:before {
+	border-left-color: #f00;
+	right: -26px;
+}
+
+ul#demo6 {
+	list-style: none;
+	height: 24px;
+	overflow: hidden;
+}
+
+#demo6 li {
+	float: left;
+	padding-left: 12px;
+	position: relative;
+	margin: 0 20px 12px -19px;
+}
+
+#demo6 li:after, #demo6 li:before {
+	border: 10px solid transparent;
+	border-left: 10px solid #fff;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	right: -20px;
+	content: ' '
+}
+
+#demo6 li:before {
+	border-left-color: blue;
+	right: -21px;
+}
+
+#demo {
+	width: 100px;
+	height: 100px;
+	background-color: #ccc;
+	position: relative;
+	border: 4px solid #333;
+}
+
+#demo:after, #demo:before {
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	left: 100%;
+	position: absolute;
+	width: 0;
+}
+
+#demo:after {
+	border-width: 9px;
+	border-left-color: #ccc;
+	top: 15px;
+}
+
+#demo:before {
+	border-width: 14px;
+	border-left-color: #333;
+	top: 10px;
+}
+
+#demo7 {
+	border:#666 solid;
+	border-width:2px 2px 0 0;
+	width:15px;
+	height:15px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
